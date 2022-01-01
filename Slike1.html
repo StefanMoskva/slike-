@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Advanced-CSS">
+    <meta name="author" content="Stefan Vucinic">
+    <title>Responsive-Gallery</title>
+
+    <style>
+         body{
+           background-image: url(5.png);
+          
+             }
+        .container {
+            max-width: 960px;
+            width: 90%;
+            margin: 50px auto;
+            font-family: sans-serif;
+        
+        
+             }
+
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            margin: 0 -20px;
+            line-height: 30px;
+           
+            }
+        .column {
+           
+            flex-basis: 20%;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+            
+           
+            }
+
+        .box {
+            height: 100px;
+            background-color: hsl(210deg 59% 64%);
+            background-image: url(placeholder-image.png);
+            background-position: center;
+            background-size: 140px;
+            background-repeat: no-repeat;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            box-shadow: 2px 0px 3px black;
+            
+            }
+        .box:hover {
+            background-color: grey;
+             }
+
+        @media screen and (max-width: 1024px) {
+            .column {
+                 flex-basis: 33.33%;
+                 }
+            }
+        @media screen and (max-width: 768px) {
+            .column {
+                flex-basis: 50%;
+                }
+            }
+        @media screen and (max-width: 414px) {
+            .column {
+                 flex-basis: 100%;
+                }
+            }
+
+    </style>
+
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Gallery Heading</h1>
+        <div class="row">
+        <div class="column">
+        <a href="New folder/index.html"><div id="box1" class="box"></div></a>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title </div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title </div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        <div class="column">
+        <div class="box"></div>
+        Image Title</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium varius varius. Duis volutpat elementum neque, sed congue neque luctus ut. Nunc ligula lacus, hendrerit eget urna finibus, tristique ullamcorper nulla. Pellentesque congue laoreet eros. Nunc sit amet ipsum id ex rhoncus ornare quis eu mi. Morbi ac finibus odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis
+            tempus tempor. Etiam at neque sed nisl ornare semper pharetra non sapien. Praesent pellentesque, ipsum a fermentum fermentum, sapien dui pharetra felis, in dictum arcu urna in nibh. Aliquam pulvinar pellentesque nisl, pharetra ultricies mauris auctor vel. Aliquam erat volutpat. Vestibulum suscipit ut ligula finibus semper. In hac habitasse platea dictumst. Fusce ante nisi, auctor vel fermentum sed, tincidunt non ex. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium varius varius. Duis volutpat elementum neque, sed congue neque luctus ut. Nunc ligula lacus, hendrerit eget urna finibus, tristique ullamcorper nulla. Pellentesque congue laoreet eros. Nunc sit amet ipsum id ex rhoncus ornare quis eu mi. Morbi ac finibus odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis tempus tempor. Etiam at neque sed nisl ornare semper pharetra non sapien. Praesent pellentesque, ipsum a fermentum fermentum, sapien dui pharetra felis, in dictum arcu urna in nibh. Aliquam pulvinar pellentesque nisl, pharetra ultricies mauris auctor vel. Aliquam erat volutpat. Vestibulum suscipit ut ligula finibus semper. In hac habitasse platea dictumst. Fusce ante nisi, auctor vel fermentum sed, tincidunt non ex.</p>
+    
+        </div>
+        
+</body>
+ <!--Stefan Vucinic-->
+</html>
